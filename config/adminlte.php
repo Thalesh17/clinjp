@@ -110,76 +110,75 @@ return [
     'menu' => [
         'Menu',
         [
-            'text' => 'Home',
-            'url'  => 'admin/home',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'Pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'home',
+            'text'        => 'Dashboard',
+            'url'         => 'admin',
+            'icon'        => 'dashboard',
         ],
         'ACCOUNT SETTINGS',
         [
             'text' => 'Pacientes',
             'url'  => 'admin/pacientes',
+            'icon' => 'user'
+        ],
+        [
+            'text' => 'Agenda',
+            'url'  => 'agenda',
+            'icon' => 'calendar'
+        ],
+        [
+            'text' => 'Consultas',
+            'url'  => 'consultas',
+            'icon' => 'user-md',
+        ],
+        [
+            'text' => 'Finanças',
+            'url'  => 'admin/settings',
+            'icon' => 'money',
+            'submenu' => [
+                [
+                    'text' => 'Resumo',
+                    'url'  => 'admin/balance',
+                    'icon' => 'comments',
+                ],
+                [
+                    'text' => 'Extrato',
+                    'url'  => 'admin/balance',
+                    'icon' => 'exchange',
+                ],
+                [
+                    'text' => 'Fluxo de Caixa',
+                    'url'  => 'admin/balance',
+                    'icon' => 'credit-card-alt',
+                ]
+            ]
+        ],
+        [
+            'text'    => 'Relatorios',
+            'icon'    => 'book',
+            'submenu' => [
+                [
+                    'text' => 'Emitir Relatorios',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Visualizar Relatorios',
+                    'url'  => '#'
+                ],
+                
+            ],
+        ],
+        'Configuração',
+        [
+            'text'       => 'Usuarios',
             'icon' => 'user',
         ],
         [
-            'text' => 'Change Password',
-            'url'  => 'admin/settings',
-            'icon' => 'lock',
+            'text'       => 'Tabelas do Sistema',
+            'icon' => 'table',
         ],
         [
-            'text'    => 'Multilevel',
-            'icon'    => 'share',
-            'submenu' => [
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'Level One',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Level Two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'Level Two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        'LABELS',
-        [
-            'text'       => 'Important',
-            'icon_color' => 'red',
-        ],
-        [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
+            'text'       => 'Configuração do Sistema',
+            'icon' => 'wrench',
         ],
     ],
 
